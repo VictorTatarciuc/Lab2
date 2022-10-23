@@ -1,0 +1,39 @@
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.exe.config
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.exe
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.pdb
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.dll
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.GLControl.dll
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.pdb
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.xml
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.GLControl.xml
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.CoreCompileInputs.cache
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.CopyComplete
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.exe
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.pdb
+C:\Users\epoc3\Documents\MotorSkill_WPF\TO DO\EGC\Labs 2018-2019\Lab 05\tmp\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csprojAssemblyReference.cache
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.exe.config
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.exe
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.pdb
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.dll
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.pdb
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.xml
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.AssemblyReference.cache
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.SuggestedBindingRedirects.cache
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.CoreCompileInputs.cache
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.CopyComplete
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.exe
+C:\Users\Professional\Downloads\Laborator EGC 02 (2022-2023) - OpenTK, introducere\OpenTK_Introducere\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.pdb
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.exe.config
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.exe
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\bin\Debug\OpenTK_immediate_mode.pdb
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\bin\Debug\OpenTK.pdb
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\bin\Debug\OpenTK.xml
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.AssemblyReference.cache
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.SuggestedBindingRedirects.cache
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.CoreCompileInputs.cache
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.csproj.CopyComplete
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.exe
+C:\Users\Professional\Desktop\OpenTK_immediate_mode\obj\Debug\OpenTK_immediate_mode.pdb
