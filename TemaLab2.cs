@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using OpenTK;
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
@@ -9,6 +10,52 @@ namespace OpenTK_Tema_lab2
 {
     class TemaLab2 : GameWindow
     {
+        private int[,] objVertices = {
+            {5, 10, 5,
+                10, 5, 10,
+                5, 10, 5,
+                10, 5, 10,
+                5, 5, 5,
+                5, 5, 5,
+                5, 10, 5,
+                10, 10, 5,
+                10, 10, 10,
+                10, 10, 10,
+                5, 10, 5,
+                10, 10, 5},
+            {5, 5, 12,
+                5, 12, 12,
+                5, 5, 5,
+                5, 5, 5,
+                5, 12, 5,
+                12, 5, 12,
+                12, 12, 12,
+                12, 12, 12,
+                5, 12, 5,
+                12, 5, 12,
+                5, 5, 12,
+                5, 12, 12},
+            {6, 6, 6,
+                6, 6, 6,
+                6, 6, 12,
+                6, 12, 12,
+                6, 6, 12,
+                6, 12, 12,
+                6, 6, 12,
+                6, 12, 12,
+                6, 6, 12,
+                6, 12, 12,
+                12, 12, 12,
+                12, 12, 12}};
+        private const int XYZ_SIZE = 50;
+        bool DrowCub = false;
+        bool Colorrrrrr = false;
+        private Color[] colorVertices = { Color.White, Color.LawnGreen, Color.WhiteSmoke, Color.Tomato, Color.Turquoise, Color.OldLace, Color.Olive, Color.MidnightBlue, Color.PowderBlue, Color.PeachPuff, Color.LavenderBlush, Color.MediumAquamarine };
+        private Color[] colorVerticess = { Color.Red, Color.Green, Color.Coral, Color.Violet, Color.Yellow, Color.Blue, Color.Black, Color.Maroon, Color.Green, Color.Lime, Color.Aqua, Color.Pink };
+
+        private int transStep = 0;
+        private int radStep = 0;
+        private int attStep = 0;
 
         public TemaLab2() : base(1200, 600, new GraphicsMode(32, 24, 0, 8)) {
             VSync = VSyncMode.On;
@@ -19,7 +66,7 @@ namespace OpenTK_Tema_lab2
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
 
-            GL.ClearColor(Color.Black);
+            GL.ClearColor(Color.Gray);
             GL.Enable(EnableCap.DepthTest);
             GL.DepthFunc(DepthFunction.Less);
             GL.Hint(HintTarget.PolygonSmoothHint, HintMode.Nicest);
@@ -37,11 +84,11 @@ namespace OpenTK_Tema_lab2
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadMatrix(ref perspective);
 
-            Matrix4 lookat = Matrix4.LookAt(30, 30, 0, 0, 0, 0, 0, 1, 0);
+            Matrix4 lookat = Matrix4.LookAt(30, 30, 30, 0, 0, 0, 0, 1, 0);
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref lookat);
 
-
+            DrowCub = true;
         }
 
         protected override void OnUpdateFrame(FrameEventArgs e)
@@ -58,34 +105,52 @@ namespace OpenTK_Tema_lab2
 
 
             //miscare pe sageti
-            if (keyboard[Key.Left])
-            {
-                GL.Translate(0, 0, 3);
-            }
-            if (keyboard[Key.Right]){
-                GL.Translate(0, 0, -3);
-            }
-            if (keyboard[Key.Up])
-            {
-                GL.Translate(0, 3, 0);
-            }
-            if (keyboard[Key.Down])
-            {
-                GL.Translate(0, -3, 0);
-            }
+                if (keyboard[Key.A])
+                {
+                    transStep--;
+                }
+                if (keyboard[Key.D])
+                {
+                    transStep++;
+                }
+                if (keyboard[Key.W])
+                {
+                    radStep--;
+                }
+                if (keyboard[Key.S])
+                {
+                    radStep++;
+                }
+                if (keyboard[Key.L])//Schimbul de culori
+                {
+                Colorrrrrr = true;
+                }
+                if (keyboard[Key.K])
+                {
+                Colorrrrrr = false;
+                }
+                if (keyboard[Key.P])
+                {
+                DrowCub = false;
+                }
 
 
 
-            //miscare la clic de maus
+
+            //miscare la clic de maus(sus/jos)
             if (mouse.IsButtonDown(MouseButton.Left))
-            {
-                GL.Translate(mouse.X*0.01, mouse.Y*0.01, 0);
-            }
-            if (mouse.IsButtonDown(MouseButton.Right))
-            {
-                GL.Translate(-mouse.X * 0.01, -mouse.Y * 0.01, 0);
-            }
+                {
+                    attStep--;
+
+                }
+                if (mouse.IsButtonDown(MouseButton.Right))
+                {
+                    attStep++;
+ 
+                }
+            
         }
+
 
         protected override void OnRenderFrame(FrameEventArgs e) {
             base.OnRenderFrame(e);
@@ -94,57 +159,116 @@ namespace OpenTK_Tema_lab2
             GL.Clear(ClearBufferMask.DepthBufferBit);
 
 
-            DrawBox(4);
+
+            if (DrowCub == true)
+            {
+                GL.PushMatrix();
+                GL.Translate(transStep, attStep, radStep);
+                GL.Translate(0, 0, radStep);
+                GL.Translate(0, attStep, 0);
+                DrawCube();
+                GL.PopMatrix();
+            }
+
+
+            //DrawTriangle();
+            //DrawAxes();
+            //DrawCube();
             
             SwapBuffers();
         }
 
-
-
-        private void DrawBox(float size)
+        private void DrawAxes()
         {
-            float[,] n = new float[,]{
-            {-1.0f, 0.0f, 0.0f},
-            {0.0f, 1.0f, 0.0f},
-            {1.0f, 0.0f, 0.0f},
-            {0.0f, -1.0f, 0.0f},
-            {0.0f, 0.0f, 1.0f},
-            {0.0f, 0.0f, -1.0f}
-        };
-            int[,] faces = new int[,]{
-            {0, 1, 2, 3},
-            {3, 2, 6, 7},
-            {7, 6, 5, 4},
-            {4, 5, 1, 0},
-            {5, 6, 2, 1},
-            {7, 4, 0, 3}
-        };
-            float[,] v = new float[8, 3];
-            int i;
 
-            v[0, 0] = v[1, 0] = v[2, 0] = v[3, 0] = -size / 2;
-            v[4, 0] = v[5, 0] = v[6, 0] = v[7, 0] = size / 2;
-            v[0, 1] = v[1, 1] = v[4, 1] = v[5, 1] = -size / 2;
-            v[2, 1] = v[3, 1] = v[6, 1] = v[7, 1] = size / 2;
-            v[0, 2] = v[3, 2] = v[4, 2] = v[7, 2] = -size / 2;
-            v[1, 2] = v[2, 2] = v[5, 2] = v[6, 2] = size / 2;
-
-            GL.Begin(PrimitiveType.Quads);
-            GL.Color3(Color.Green);
-            for (i = 5; i >= 0; i--)
+            // Desenează toate 3 axe intrun Gl.Begin(lab3 ex1)
+            GL.Begin(PrimitiveType.Lines);
+            for (int i = 0; i < 3; i++)
             {
-                GL.Normal3(ref n[i, 0]);
-                GL.Vertex3(ref v[faces[i, 0], 0]);
-                GL.Vertex3(ref v[faces[i, 1], 0]);
-                GL.Vertex3(ref v[faces[i, 2], 0]);
-                GL.Vertex3(ref v[faces[i, 3], 0]);
+                if (i == 0)
+                {
+                    GL.Color3(Color.Yellow);
+                    GL.Vertex3(0, 0, 0);
+                    GL.Vertex3(XYZ_SIZE, 0, 0);
+                }
+                if (i == 1)
+                {
+                    GL.Color3(Color.Green);
+                    GL.Vertex3(0, 0, 0);
+                    GL.Vertex3(0, XYZ_SIZE, 0);
+                }
+                if (i == 2)
+                {
+                    GL.Color3(Color.Red);
+                    GL.Vertex3(0, 0, 0);
+                    GL.Vertex3(0, 0, XYZ_SIZE);
+                }
             }
-            
             GL.End();
         }
 
+        private void DrawCube()
+        {
 
-        [STAThread]
+            GL.Begin(PrimitiveType.Triangles);
+            for (int i = 0; i < 35; i = i + 3)
+            {
+                
+                if (Colorrrrrr == true)
+                {
+                    GL.Color3(colorVerticess[i / 3]);
+                }
+                else
+                    GL.Color3(colorVerticess[i / 3]);
+                GL.Vertex3(objVertices[0, i], objVertices[1, i], objVertices[2, i]);
+                GL.Vertex3(objVertices[0, i + 1], objVertices[1, i + 1], objVertices[2, i + 1]);
+                GL.Vertex3(objVertices[0, i + 2], objVertices[1, i + 2], objVertices[2, i + 2]);
+            }
+            GL.End();
+
+        }
+
+        private void DrawTriangle()
+        {
+
+            GL.LineWidth(5);
+
+            GL.Begin(PrimitiveType.Triangles);
+            GL.Color3(Color.Red);
+            GL.Vertex3(10, 0, 0);
+            GL.Vertex3(-10, 0, 0);
+            GL.Vertex3(0, 10, 0);
+            GL.End();
+
+            //Nu reusesc sa citesc coordonatele din fisier, mai incerc pe parcurs
+            /*
+            using (StreamReader sr = new StreamReader("C:\\Users\\Professional\\Desktop\\LAB2\\Lab2\\coordonate.txt"))
+            {
+                string sLineOne = sr.ReadLine();
+                string[] split = sLineOne.Split(' ');
+                for (int i = 0; i < 8; i++)
+                {
+                    for(int j = 0;j <2; j++)
+                    {
+                        int x = Convert.ToInt32(split[0]);
+                        int y = Convert.ToInt32(split[1]);
+                        int z = Convert.ToInt32(split[2]);
+                        GL.Color3(Color.Red);
+                        GL.Vertex3(x, y, z);
+                        
+
+                    }
+                }
+        }*/
+
+
+          
+
+
+
+        }
+
+            [STAThread]
         static void Main(string[] args) {
 
             using (TemaLab2 example = new TemaLab2()) {

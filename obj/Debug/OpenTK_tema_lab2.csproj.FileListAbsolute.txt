@@ -22,3 +22,15 @@ C:\Users\Professional\Desktop\OpenTK_tema_lab2\obj\Debug\OpenTK_tema_lab2.csproj
 C:\Users\Professional\Desktop\OpenTK_tema_lab2\obj\Debug\OpenTK_tema_lab2.csproj.CopyComplete
 C:\Users\Professional\Desktop\OpenTK_tema_lab2\obj\Debug\OpenTK_immediate_mode.exe
 C:\Users\Professional\Desktop\OpenTK_tema_lab2\obj\Debug\OpenTK_immediate_mode.pdb
+C:\Users\Professional\Desktop\LAB2\Lab2\bin\Debug\OpenTK_immediate_mode.exe.config
+C:\Users\Professional\Desktop\LAB2\Lab2\bin\Debug\OpenTK_immediate_mode.exe
+C:\Users\Professional\Desktop\LAB2\Lab2\bin\Debug\OpenTK_immediate_mode.pdb
+C:\Users\Professional\Desktop\LAB2\Lab2\bin\Debug\OpenTK.pdb
+C:\Users\Professional\Desktop\LAB2\Lab2\bin\Debug\OpenTK.xml
+C:\Users\Professional\Desktop\LAB2\Lab2\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Professional\Desktop\LAB2\Lab2\obj\Debug\OpenTK_tema_lab2.csproj.AssemblyReference.cache
+C:\Users\Professional\Desktop\LAB2\Lab2\obj\Debug\OpenTK_tema_lab2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Professional\Desktop\LAB2\Lab2\obj\Debug\OpenTK_tema_lab2.csproj.CoreCompileInputs.cache
+C:\Users\Professional\Desktop\LAB2\Lab2\obj\Debug\OpenTK_tema_lab2.csproj.CopyComplete
+C:\Users\Professional\Desktop\LAB2\Lab2\obj\Debug\OpenTK_immediate_mode.exe
+C:\Users\Professional\Desktop\LAB2\Lab2\obj\Debug\OpenTK_immediate_mode.pdb
